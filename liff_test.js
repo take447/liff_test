@@ -6,7 +6,7 @@ window.onload = function (e) {
 }
 
 function initializeApp(data) {
-    document.getElementById('uid').value = '成功';//data.context.userId;
+    document.getElementById('uid').value = data.context.userId;
 }
 
 function er(data) {
