@@ -5,7 +5,7 @@ window.onload = function (e) {
 };
 
 function initializeApp(data) {
-    document.getElementById('uid').textContent = data.context.userId;
+    document.getElementById('uid').value = data.context.userId;
 
     // closeWindow call
     //document.getElementById('closewindowbutton').addEventListener('click', function () {
