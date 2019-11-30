@@ -14,6 +14,7 @@ window.onload = function (e) {
 }
 
 function initializeApp(data) {
-    document.getElementById('uid').value = data.context.userId;
+//    document.getElementById('uid').value = data.context.userId;
+    document.getElementById('uid').value = 'a';
 }
 
