@@ -1,15 +1,19 @@
 window.onload = function (e) {
-    liff.init(function (data) {
-        initializeApp(data);
-    });
-};
+    liff
+        .init({
+            liffId: '1653591503-97y46Wm0'
+        })
+        .then(() => {
+            // start to use LIFF's api
+            initializeApp();
+        })
+        .catch((err) => {
+            //document.getElementById("liffAppContent").classList.add('hidden');
+            //document.getElementById("liffInitErrorMessage").classList.remove('hidden');
+        });
+}
 
 function initializeApp(data) {
     document.getElementById('uid').value = data.context.userId;
-
-    // closeWindow call
-    //document.getElementById('closewindowbutton').addEventListener('click', function () {
-    //    liff.closeWindow();
-    //});
-
 }
+
