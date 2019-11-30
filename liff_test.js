@@ -11,7 +11,7 @@ window.onload = function (e) {
             //document.getElementById("liffAppContent").classList.add('hidden');
             //document.getElementById("liffInitErrorMessage").classList.remove('hidden');
         });
-}
+};
 
 function initializeApp(data) {
 //    document.getElementById('uid').value = data.context.userId;
