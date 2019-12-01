@@ -6,8 +6,10 @@ window.onload = function (e) {
 }
 
 function initializeApp(data) {
-    document.getElementById('uid').value = data;
-}
+    liff.getProfile().then(function(profile){
+        document.getElementById('uid').value = profile.userId;
+    }); 
+}    
 
 function er(data) {
     document.getElementById('uid').value = '失敗';
